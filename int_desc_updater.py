@@ -1,5 +1,17 @@
+# Script by Mitch Bradford
+# Dependencies - napalm
+# Instructions - Set networking vendor in DRIVER_NAME variable
+# -----------------------------------------------------------------------
+
 import napalm
 from getpass import getpass
+
+# --- BANNER ---
+print('==========================================================')
+print('Interface Description Updater.  This script will SSH into ')
+print('a device and find any interfaces without a description ')
+print('to update based on LLDP neighbours.')
+print('==========================================================')
 
 # Device connection details
 hostname = input('Enter IP address of device:')
